@@ -260,3 +260,188 @@ body {
 .skill {
   font-size: 14px;
 }
+
+
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .container::before {
+    --size: 700px;
+    top: -500px;
+  }
+
+  .container::after {
+    --size: 300px;
+    bottom: -180px;
+  }
+
+  .top {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .user-wrapper {
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .box-title {
+    font-size: 24px;
+  }
+
+  .box {
+    margin-bottom: 56px;
+  }
+
+  .todo {
+    margin-bottom: 80px;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .card-img {
+    max-width: 100%;
+  }
+
+  .card-description {
+    font-size: 18px;
+  }
+
+  .list {
+    columns: 2;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .container::before {
+    --size: 480px;
+    top: -350px;
+  }
+
+  .container::after {
+    --size: 200px;
+    bottom: -120px;
+    left: -60px;
+  }
+
+  .top {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .logo-wrapper {
+    max-width: 150px;
+  }
+
+  .user-wrapper {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .user-photo-wrapper {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .box-title {
+    font-size: 20px;
+  }
+
+  .box {
+    margin-bottom: 40px;
+  }
+
+  .todo {
+    margin-bottom: 56px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card-img {
+    height: auto;
+    max-height: 200px;
+  }
+
+  .card-description {
+    font-size: 16px;
+  }
+
+  .plot {
+    width: 100%;
+    margin: 24px auto;
+  }
+
+  .list {
+    columns: 1;
+  }
+
+  .list-item {
+    justify-content: center;
+  }
+
+  .month {
+    width: 110px;
+    font-size: 12px;
+  }
+
+  .skill {
+    width: 140px;
+    font-size: 12px;
+  }
+
+  .gold {
+    font-size: 28px;
+  }
+}
+
+
+@media screen and (max-width: 360px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .month,
+  .skill {
+    width: auto;
+    min-width: 100px;
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+}
