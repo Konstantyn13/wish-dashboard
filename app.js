@@ -83,7 +83,7 @@ function showDreams(root, array) {
       (e, i) => `
   <figure class="card dream-${i + 1}">
     <div class="card-img-wrapper">
-      <img src="./images/${e.src}" 
+      <img src="${e.src}" 
            alt="${e.alt}" 
            class="card-img" 
       />
@@ -101,8 +101,8 @@ function showPerson(ref, person) {
   const getFullName = `${name} ${surname}`;
   ref.userName.textContent = getFullName;
   ref.userPhoto.alt = getFullName;
-  ref.userPhoto.src = `./images/${userPhoto}`;
-  ref.qrCode.src = `./images/${qrQode}`;
+  ref.userPhoto.src = userPhoto;
+  ref.qrCode.src = qrQode;
 }
 
 
@@ -130,4 +130,3 @@ function run() {
 }
 
 run();
-
