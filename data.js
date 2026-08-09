@@ -1,12 +1,12 @@
 const user = {
   name: "Константин",
   surname: "Костюк",
-  userPhoto: "../images/my-photo.jpg",
-  qrQode: "../images/qr-code.svg",
+  userPhoto: "./images/my-photo.jpg",
+  qrQode: "./images/qr-code.svg",
   dreams: [
-    { src: "../images/car.jpg", alt: "Авто моєї мрії" },
-    { src: "../images/home.jpg", alt: "Домівка на місяці" },
-    { src: "../images/voyage.jpg", alt: "Подорож до Марсу" },
+    { src: "./images/car.jpg", alt: "Авто моєї мрії" },
+    { src: "./images/home.jpg", alt: "Домівка на місяці" },
+    { src: "./images/voyage.jpg", alt: "Подорож до Марсу" },
   ],
 };
 
